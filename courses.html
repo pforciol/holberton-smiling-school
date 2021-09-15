@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>Holberton Smiling School - Pricing</title>
+        <meta name="description" content="Bootstrap is a free and open-source CSS framework" />
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body class="text-white">
+        <!-- Navbar & Hero section -->
+
+        <header class="courses-header jumbotron-fluid d-flex flex-column">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm pt-3">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="holberton_school-icon-menu"></span>
+                    </button>
+                    <div class="navbar-brand d-sm-none d-flex flex-column mx-auto align-items-center">
+                        <a href="#"><img src="images/smile_off.png" alt="Smile logo" class="logo" /></a>
+                        <a href="#"><img src="images/logo.png" alt="Smiling School Logo" class="logo mt-2" /></a>
+                    </div>
+                    <div class="navbar-brand d-none d-sm-block mx-auto">
+                        <a href="#"><img src="images/smile_off.png" alt="Smile logo" class="logo" /></a>
+                        <a href="#"><img src="images/logo.png" alt="Smiling School Logo" class="logo ml-3" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse pt-0" id="navbar">
+                        <div class="navbar-nav d-sm-none">
+                            <div class="d-sm-none mx-auto mt-3">
+                                <a class="nav-link text-uppercase font-weight-bold text-center nav-active" href="courses.html">Courses</a>
+                                <a class="nav-link text-uppercase font-weight-bold text-center" href="pricing.html">Pricing</a>
+                                <a class="nav-link text-uppercase font-weight-bold text-center" href="#login">Login</a>
+                            </div>
+                        </div>
+                        <div class="d-none d-sm-block ml-auto">
+                            <div class="navbar-nav">
+                                <a class="nav-link font-weight-bold text-uppercase nav-active" href="courses.html">Courses</a>
+                                <a class="nav-link font-weight-bold text-uppercase" href="pricing.html">Pricing</a>
+                                <a class="nav-link font-weight-bold text-uppercase" href="#login">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container d-flex flex-grow-1 flex-column justify-content-center align-items-center mt-4 mb-5">
+                <h1 class="h3 font-coiny">
+                    « Don’t cry because it’s over.<br />
+                    <span class="text-pink">Smile</span> because it happened. »
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <!-- Search form section -->
+            <div class="bg-purple search">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-12 col-sm-12 col-lg-4 box1">
+                            <span class="text-white font-weight-bold font-size-small">KEYWORDS</span>
+
+                            <div class="input-group mb-sm-4">
+                                <div class="input-group-prepend mr-0">
+                                    <span class="input-group-text holberton_school-icon-search_1 text-white"></span>
+                                </div>
+                                <input type="text" class="form-control search-text-area" aria-label="Default" placeholder="Search by keywords" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 box2">
+                            <span class="text-white font-weight-bold font-size-small">TOPIC</span>
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle text-left py-2" href="#" role="button" id="topicdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Novice</span>
+                                </a>
+
+                                <div class="dropdown-menu mt-0" aria-labelledby="topicdropdown">
+                                    <a class="dropdown-item" href="#">Novice</a>
+                                    <a class="dropdown-item" href="#">Intermediate</a>
+                                    <a class="dropdown-item" href="#">Expert</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 box3">
+                            <span class="text-white font-weight-bold font-size-small">SORT BY</span>
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle text-left py-2" href="#" role="button" id="sortbydropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Most Popular</span>
+                                </a>
+
+                                <div class="dropdown-menu mt-0" aria-labelledby="sortbydropdown">
+                                    <a class="dropdown-item" href="#">Most Popular</a>
+                                    <a class="dropdown-item" href="#">Most Recent</a>
+                                    <a class="dropdown-item" href="#">Most Viewed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results section -->
+
+            <div class="results-section py-5 text-dark">
+                <div class="container">
+                    <span class="text-left text-muted">11 videos</span>
+
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_4.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_3.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Sad Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_1.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Natural Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+
+                        <div class="d-none d-lg-flex col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_2.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Happy Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_4.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_3.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Sad Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_1.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Natural Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+
+                        <div class="d-none d-lg-flex col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_2.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Happy Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_4.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_3.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Sad Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+
+                        <div class="col-12 col-sm-4 col-lg-3">
+                            <div class="card bg-transparent border-0">
+                                <div class="position-relative">
+                                    <img class="card-img-top" src="images/thumbnail_1.jpg" alt="First Video" />
+                                    <img class="play-overlay position-absolute" src="images/play.png" width="50" alt="Video preview" />
+                                </div>
+                                <div class="card-body pt-1 px-2">
+                                    <h5 class="card-title font-weight-bold mt-3">Natural Smile</h5>
+                                    <p class="latest-description latest-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.<br /></p>
+                                    <div class="row px-3">
+                                        <div class="col-2 p-0">
+                                            <img class="latest-author rounded-circle" src="images/profile_1.jpg" alt="Philip Masey" />
+                                        </div>
+                                        <div class="col-10 p-0">
+                                            <span class="text-pink font-weight-bold latest-text align-middle ml-2">Philip Massey</span>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 py-2">
+                                        <div class="col-6 p-0">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_on.png" alt="star on" /></div>
+                                                <div class="col-2 px-0"><img class="rating-star" src="images/star_off.png" alt="star on" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-0 text-right"><span class="read-time text-pink latest-text align-middle">8 min</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+
+        <footer class="footer bg-smile-dark pb-4 d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row d-flex align-items-center flex-column flex-sm-row pt-5">
+                    <div class="col footer-item d-flex justify-content-center justify-content-sm-start">
+                        <div class="footer-logo">
+                            <img src="images/smile_off.png" alt="navbar-logo" width="37" class="mr-4 mb-3 mb-sm-0 mr-sm-3 img-fluid" />
+                            <img src="images/logo.png" alt="navbar-logo-text" width="114" class="mr-4 img-fluid" />
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end py-5">
+                        <div class="social">
+                            <ul class="social nav">
+                                <li class="social-item facebook-icon pr-2">
+                                    <a href="https://www.facebook.com/HolbertonSchool/" class="social-link" aria-label="Facebook"><span class="holberton_school-icon-ic_facebook"></span></a>
+                                </li>
+                                <li class="social-item twitter-icon px-2">
+                                    <a href="https://twitter.com/holbertonschool" class="social-link" aria-label="Twitter"><span class="holberton_school-icon-ic_twitter"></span></a>
+                                </li>
+                                <li class="social-item instagram-icon pl-2">
+                                    <a href="https://www.instagram.com/holbertonschool/" class="social-link" aria-label="Instagram"><span class="holberton_school-icon-ic_instagram"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="text-muted trademark">
+                        <span>©smileschool 2020</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCElg-Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

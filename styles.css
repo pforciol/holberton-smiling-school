@@ -1,0 +1,290 @@
+@import url(fonts/holberton_school-icon.css);
+
+/* Variables */
+
+:root {
+    --color-primary: #c271ff;
+    --color-white: #ffffff;
+    --color-dark: #071629;
+    --color-green: #82d24f;
+    --font-size-small: 0.9rem;
+    --font-size-xs: 0.7rem;
+}
+
+/* General rules */
+
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif !important;
+}
+
+.bg-purple {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-smile-dark {
+    background-color: var(--color-dark) !important;
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+.text-pink {
+    color: var(--color-primary);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+.font-size-small {
+    font-size: var(--font-size-small);
+}
+
+.font-size-xs {
+    font-size: var(--font-size-xs);
+}
+
+.font-coiny {
+    font-family: Coiny, Arial, Helvetica, sans-serif !important;
+}
+
+/* Navbar */
+
+.logo {
+    height: 2rem;
+}
+
+.navbar-brand {
+    transform: translateX(-1.2rem);
+}
+
+.nav-link:hover {
+    color: var(--color-primary) !important;
+}
+
+/* Hero section */
+
+.homepage-header {
+    background: url(images/pic_1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: var(--color-dark) !important;
+}
+
+@media screen and (max-width: 575px) {
+    .homepage-header {
+        background-size: 110vh;
+        background-position: top;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .display-1 {
+        font-size: 5rem !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    .display-1 {
+        font-size: 3.5rem !important;
+    }
+}
+
+/* Quote carousel */
+
+.pros-section .card img {
+    width: 150px;
+}
+
+/* Tutorials & Latest videos carousels */
+
+.tutorials-section .card-title,
+.latest-videos-section .card-title {
+    font-size: 1.1rem;
+}
+
+.tutorials-description,
+.latest-description {
+    opacity: 0.5;
+}
+
+.tutorial-author,
+.latest-author {
+    width: 30px;
+}
+
+.rating-star {
+    width: 15px;
+}
+
+.tutorials-text,
+.latest-text {
+    font-size: var(--font-size-small);
+}
+
+.play-overlay {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Free membership section */
+
+.free-membership-section img {
+    width: 45px;
+}
+
+/* Footer */
+
+.footer .social-item {
+    font-size: 30px;
+}
+.footer .social-item a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer .trademark {
+    font-size: var(--font-size-small);
+}
+
+/* Pricing page */
+
+/* Hero section */
+
+.pricing-header {
+    background: url(images/pic_2.jpg) no-repeat top;
+    background-size: cover;
+    min-height: 80vh;
+    background-color: var(--color-dark) !important;
+}
+
+@media screen and (max-width: 575px) {
+    .pricing-header {
+        background-size: 80vh;
+        background-position: top;
+    }
+}
+
+.prices-grid .table {
+    table-layout: fixed;
+    margin-bottom: 0;
+    word-wrap: break-word;
+}
+
+.check-icon {
+    color: var(--color-green);
+    font-size: 2rem;
+}
+
+/* Courses page */
+
+/* Hero section */
+
+.courses-header {
+    background: url(images/pic_3.jpg) no-repeat top;
+    background-size: cover;
+    /* min-height: 15vh; */
+    background-color: var(--color-dark) !important;
+}
+
+.nav-link {
+    color: var(--color-white);
+}
+
+.nav-active {
+    color: var(--color-primary);
+    position: relative;
+}
+
+.nav-active::after {
+    content: "";
+    background: var(--color-white);
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    height: 2px;
+    width: 80%;
+}
+
+.search .input-group {
+    height: 46px;
+}
+
+.search .input-group-text {
+    border-style: none;
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.search .form-control.search-text-area {
+    height: 100%;
+    border-style: none;
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+    mix-blend-mode: normal;
+}
+
+.search .form-control.search-text-area::placeholder {
+    color: var(--color-white);
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.search .form-control.search-text-area:focus {
+    box-shadow: none;
+}
+
+.search .drop-down-title {
+    font-size: 1rem;
+}
+
+.search .dropdown .btn {
+    width: 100%;
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+    mix-blend-mode: normal;
+}
+
+.search .dropdown .btn span {
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.search .dropdown .btn:after {
+    color: var(--color-white);
+    right: 12px;
+    top: 50%;
+    position: absolute;
+}
+
+.search .btn.focus,
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.search .dropdown-menu {
+    width: 100%;
+}
+
+.search .dropdown-menu .dropdown-item:hover {
+    color: var(--main-color);
+    background-color: white;
+}
+
+@media screen and (max-width: 575px) {
+    .search .box1 .input-group {
+        margin-bottom: 0;
+    }
+
+    .search .box2 {
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+}
